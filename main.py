@@ -1,18 +1,20 @@
-from le_fantome.agent.agent import LeFantome
+from src.agent.agent import LeFantome
 
 
 def main():
+
     agent = LeFantome()
 
-    print("👻 Le-Fantome")
+    print("Le-Fantome")
     print("Local AI Computer Agent")
     print("Type 'exit' to quit.\n")
 
     while True:
+
         command = input("You > ").strip()
 
         if command.lower() in {"exit", "quit"}:
-            print("Goodbye 👻")
+            print("Closing Le-Fantome")
             break
 
         if not command:
@@ -20,7 +22,7 @@ def main():
 
         response = agent.process(command)
 
-        print(f"\nLe-Fantome > {response}\n")
+        print(f"\nLF > {response}\n")
 
 
 if __name__ == "__main__":

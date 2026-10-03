@@ -1,0 +1,183 @@
+{
+  "version": "1.0",
+
+  "commands": {
+
+    "open_application": {
+      "description": "Open a macOS application",
+
+      "phrases": [
+        "open {app}",
+        "open the {app}",
+        "launch {app}",
+        "launch the {app}",
+        "start {app}",
+        "start the {app}",
+        "open {app} app",
+        "open the {app} app",
+        "launch {app} app",
+        "start {app} application"
+      ],
+
+      "action": {
+        "type": "open_application",
+        "parameter": "app"
+      },
+
+      "apps": {
+        "chrome": "Google Chrome",
+        "google chrome": "Google Chrome",
+
+        "safari": "Safari",
+
+        "music": "Music",
+        "apple music": "Music",
+
+        "finder": "Finder",
+
+        "calculator": "Calculator",
+
+        "terminal": "Terminal",
+
+        "vscode": "Visual Studio Code",
+        "visual studio code": "Visual Studio Code",
+
+        "notes": "Notes",
+        "calendar": "Calendar",
+        "mail": "Mail",
+        "messages": "Messages",
+        "photos": "Photos",
+        "facetime": "FaceTime"
+      }
+    },
+
+    "close_application": {
+      "description": "Close a macOS application",
+
+      "phrases": [
+        "close {app}",
+        "close the {app}",
+        "quit {app}",
+        "quit the {app}",
+        "exit {app}"
+      ],
+
+      "action": {
+        "type": "close_application",
+        "parameter": "app"
+      }
+    },
+
+    "volume_up": {
+      "description": "Increase system volume",
+
+      "phrases": [
+        "increase volume",
+        "turn up volume",
+        "volume up",
+        "make it louder"
+      ],
+
+      "action": {
+        "type": "volume_up"
+      }
+    },
+
+    "volume_down": {
+      "description": "Decrease system volume",
+
+      "phrases": [
+        "decrease volume",
+        "turn down volume",
+        "volume down",
+        "make it quieter"
+      ],
+
+      "action": {
+        "type": "volume_down"
+      }
+    },
+
+    "mute": {
+      "description": "Mute system volume",
+
+      "phrases": [
+        "mute",
+        "mute volume",
+        "turn off sound",
+        "silence"
+      ],
+
+      "action": {
+        "type": "mute"
+      }
+    },
+
+    "screenshot": {
+      "description": "Take a screenshot",
+
+      "phrases": [
+        "take a screenshot",
+        "take screenshot",
+        "screenshot",
+        "capture screen",
+        "capture my screen"
+      ],
+
+      "action": {
+        "type": "screenshot"
+      }
+    },
+
+    "open_finder": {
+      "description": "Open Finder",
+
+      "phrases": [
+        "open finder",
+        "open the finder",
+        "launch finder",
+        "start finder"
+      ],
+
+      "action": {
+        "type": "open_application",
+        "app": "Finder"
+      }
+    },
+
+    "open_downloads": {
+      "description": "Open Downloads folder",
+
+      "phrases": [
+        "open downloads",
+        "open the downloads folder",
+        "show downloads",
+        "open my downloads"
+      ],
+
+      "action": {
+        "type": "open_folder",
+        "folder": "Downloads"
+      }
+    },
+
+    "open_desktop": {
+      "description": "Open Desktop folder",
+
+      "phrases": [
+        "open desktop",
+        "open the desktop folder",
+        "show desktop files"
+      ],
+
+      "action": {
+        "type": "open_folder",
+        "folder": "Desktop"
+      }
+    }
+  },
+
+  "fallback": {
+    "type": "llm"
+  }
+}
